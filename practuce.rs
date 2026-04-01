@@ -400,11 +400,34 @@ fn get_it(input: &Option<&i32>) -> Option<i32> {
         }
     }
 }
+_____________________________________
+this code is from my cli os and i am learning about &Option<i32> more deeper 
+way 
 
+fn main(){
 
+    let num1 : Option<i32> = Some(100) ;
+    let res: Option<i32> = get_it(&num1) ;
+    println!("The result is {:?}" , res) ;
+}
+fn get_it(word : &Option<i32>)-> Option<i32>{
 
+    match word{
 
+        Some(val) =>{
 
+            let new_val : Option<i32> = Some(val+ 100) ;
+            return new_val ;
+        }
+        None =>{
+
+            eprintln!("No value found yet !") ;
+            return Option::<i32>::from(0) ;
+        }
+    }
+}
+---> returning Option type number like this Option::<i32>::from(0) , 
+    I have learnt this for the first time from the rust compiler 
 
 
 
