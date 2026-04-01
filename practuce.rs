@@ -430,6 +430,28 @@ fn get_it(word : &Option<i32>)-> Option<i32>{
     I have learnt this for the first time from the rust compiler 
 
 
+_____________________________________________________________
+very important code to learn about (i32 , i32) vs &(i32 , i32) ; 
+
+fn get_it(value : &(i32 , i32))-> i32{
+    let res : i32 = value.0 * value.1  ;
+    return res as i32 ;
+}
+fn main(){
+
+    let data : (i32 , i32) = (32 , 32) ;
+    let big_data : i32 = get_it(&data) as i32 ;
+    let check : Option<i32> = Some(big_data) ;
+    match check{
+
+        Some(val) => println!("Some big data found as {:?}" , val) ,
+        None =>{
+
+            eprintln!("Nothing has found yet !")  ;
+        }
+    }
+}
+
 
 
 
