@@ -1,14 +1,23 @@
-fn main() {
-    println!("Hello, world!");
+
+
+
+
+
+
+
+
+date :2/april/2026
+12:30 pm
+------------------------------------------------------------------------------------------
+todays  greatest success is this little code 
+
+fn main(){
+
+    let val1 : i32  = 120 ;
+    let val2 : i32 = 32 ;
+    let touple1 : (&i32 , &i32) = (&val1 , &val2) ;
+    let touple2 : &(&i32 , &i32) = &touple1 ;
+    let touple3 : &&(&i32 , &i32) = &touple2 ;
+    println!("The touple 3 is {:?}" , touple3) ;
 }
-
-
-
-
-
-//i am learning rust  form a cli os and I hope that i wil learn rust more deeper then previous time
-//at all anyhow ....i will finish rust before 2 months anyhow __ I am ready to burn in the fire
-//
-//
-//
-//I have to give more and more codee right now but i cannot do this by linus maded git fuck it 
+___________________________________________________________________________________________
